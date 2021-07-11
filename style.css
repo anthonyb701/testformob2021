@@ -285,6 +285,22 @@ body {
     animation-name: backAnimation;
     background-color: #adc6e5;
 }
+.cardPhotos{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.imgLogo{
+    margin-left: 15px;
+    margin-top: 30px;
+    width: 55px; 
+}
+.qrscanner{
+    width: 40px;
+    position: absolute;
+    top: 49px;
+    right: 13px;
+}
 
 @keyframes toAnimation {
     0% {
