@@ -26,18 +26,64 @@ p{
     margin: 0;
 }
 .zagolov1{
-    margin-top: 7px;
+    margin-top: 13px;
     font-family: UkraineRegular;
     font-size: 24px;
 }
-
+.zagolovNiz{
+    margin-top: 15px;
+}
 .zagolovImg{
     width: 24px;
     /* margin-top: 5px; */
     position: absolute;
-    left: 129px;
-    top: 53px;
+    left: 130px;
+    top: 59px;
 
+}
+.photoAndDataSection{
+    display: flex;
+    margin-top: 24px;
+}
+
+.imgFace{
+    width: 161px;
+    padding-bottom: 10px;
+}
+
+.dateOfBirth{
+    margin-left: 18px;
+    margin-top: 2px;
+    font-family: UkraineRegular;
+    font-size: 13px;
+    line-height: 1.4;
+}
+.numberOfID{
+    margin-left: 18px;
+    margin-top: 14px;
+    font-family: UkraineRegular;
+    font-size: 13px;
+    line-height: 1.4;
+}
+.signatureImg{
+    width: 100px;
+    margin-top: 38px;
+    margin-left: 28px;
+}
+
+.line{
+    width: 325px;
+    height: 2px;
+    display: block;
+    background-color: #adc6e5;
+    margin-top: 11px;
+}
+
+.dots3{
+ position: absolute;
+ bottom: 0;
+ width: 58px;
+ right: 0;
 }
 
 .hello{
@@ -48,7 +94,7 @@ body {
     background: #adc6e5;
   }
 .swiper-slide{
-    width: 28%;
+    width: 100%;
 }
   /* THE MAINCONTAINER HOLDS EVERYTHING */
   /* .maincontainer {
