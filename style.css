@@ -1,7 +1,45 @@
+@font-face { font-family: UkraineBold; src: url('fonts/e-Ukraine-Bold.ttf'); } 
+@font-face { font-family: UkraineLight; src: url('fonts/e-Ukraine-Light.ttf'); } 
+@font-face { font-family: UkraineMedium; src: url('fonts/e-Ukraine-Medium.ttf'); } 
+@font-face { font-family: UkraineRegular; src: url('fonts/e-Ukraine-Regular.ttf'); } 
+@font-face { font-family: UkraineThin; src: url('fonts/e-Ukraine-Thin.ttf'); } 
+@font-face { font-family: UkraineUltraLight; src: url('fonts/e-Ukraine-UltraLight.ttf'); } 
+@font-face { font-family: UkraineHeadBold; src: url('fonts/e-UkraineHead-Bold.ttf'); } 
+@font-face { font-family: UkraineHeadLight; src: url('fonts/e-UkraineHead-Light.ttf'); } 
+@font-face { font-family: UkraineHeadLogo; src: url('fonts/e-UkraineHead-LOGO.ttf'); } 
+@font-face { font-family: UkraineHeadMedium; src: url('fonts/e-UkraineHead-Medium.ttf'); } 
+@font-face { font-family: UkraineHeadRegular; src: url('fonts/e-UkraineHead-Regular.ttf'); } 
+@font-face { font-family: UkraineHeadThin; src: url('fonts/e-UkraineHead-Thin.ttf'); } 
+@font-face { font-family: UkraineHeadUltraLight; src: url('fonts/e-UkraineHead-UltraLight.ttf'); } 
+
+
+/* Card */ 
+.cardToTest {
+    background-color: #d6e3f2;
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+}
+
+p{
+    padding: 0;
+    margin: 0;
+}
+.zagolov1{
+    font-family: UkraineMedium;
+    font-size: 24px;
+}
+
+.hello{
+    font-family: UkraineHeadLogo;
+}
+
 body {
     background: #adc6e5;
   }
-
+.swiper-slide{
+    width: 25%;
+}
   /* THE MAINCONTAINER HOLDS EVERYTHING */
   /* .maincontainer {
     position: absolute;
@@ -78,7 +116,7 @@ body {
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     overflow: hidden;
-    background: #ffc728;
+    /* background: #ffc728; */
     color: #000;
   }
 
