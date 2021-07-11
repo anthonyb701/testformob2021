@@ -24,9 +24,9 @@ const swiper = new Swiper('.swiper-container', {
   spaceBetween: 4,
 
   // If we need pagination
-  // pagination: {
-  //   el: '.swiper-pagination',
-  // },
+  pagination: {
+    el: '.swiper-pagination',
+  },
 
   // Navigation arrows
   navigation: {
@@ -103,3 +103,19 @@ window.setInterval(function () {
       }
 
       , 100);
+
+let date = new Date()
+let date1 = new Date().toLocaleDateString('uk-UA')
+console.log(date)
+
+const day = date.getDate()
+const year = date.getFullYear()
+console.log(day, year)
+const getHours = date.getHours()
+const getMinutes = date.getMinutes()
+// console.log(date.getHours())
+// console.log(date.getMinutes())
+
+document.querySelector('.dateUpdated').innerText = `${day} липня ${year}`
+document.querySelector('.timeUpdated').innerText = `${getHours}:${getMinutes}`
+// const year = date.slice()
