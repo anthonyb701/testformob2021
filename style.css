@@ -14,11 +14,17 @@
 
 
 /* Card */ 
-.cardToTest {
+.cardToTest1 {
     background-color: #d6e3f2;
     width: 100%;
     height: 100%;
     padding: 16px;
+}
+.cardToTest2{
+    background-color: #c0d9ea;
+    width: 100%;
+    height: 100%;
+    padding: 16px; 
 }
 .swiper-wrapper{
  width: 360px;
@@ -73,7 +79,12 @@ p{
 .signatureImg{
     width: 100px;
     margin-top: 38px;
-    margin-left: 28px;
+    margin-left: 20px;
+}
+
+.signForeignImg{
+    width: 122px;
+    margin-left: 14px;
 }
 
 .line{
@@ -82,6 +93,22 @@ p{
     display: block;
     background-color: #adc6e5;
     margin-top: 11px;
+}
+
+.lineForeign{
+    width: 360px;
+    font-family: UkraineMedium;
+    font-size: 12px;
+    background-color: #97cfed;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    position: absolute;
+    top: 306px;
+    left: 0;
+}
+
+.zagolozNizForeign{
+    margin-top: 40px;
 }
 
 .dots3{
