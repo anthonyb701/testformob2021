@@ -26,8 +26,18 @@ p{
     margin: 0;
 }
 .zagolov1{
+    margin-top: 7px;
     font-family: UkraineRegular;
     font-size: 24px;
+}
+
+.zagolovImg{
+    width: 24px;
+    /* margin-top: 5px; */
+    position: absolute;
+    left: 129px;
+    top: 53px;
+
 }
 
 .hello{
@@ -38,7 +48,7 @@ body {
     background: #adc6e5;
   }
 .swiper-slide{
-    width: 25%;
+    width: 28%;
 }
   /* THE MAINCONTAINER HOLDS EVERYTHING */
   /* .maincontainer {
