@@ -1,5 +1,5 @@
-const theCard1 = document.querySelector('.thecard1')
-const theCard2 = document.querySelector('.thecard2')
+// const theCard1 = document.querySelector('.thecard1')
+// const theCard2 = document.querySelector('.thecard2')
 
 
 // theCard1.addEventListener('click', () => {
@@ -21,7 +21,7 @@ const swiper = new Swiper('.swiper-container', {
     loop: false,
     slidesPerView: "auto",
     centeredSlides: true,
-    spaceBetween: -46,
+    spaceBetween: 4,
   
     // If we need pagination
     // pagination: {
@@ -51,8 +51,8 @@ const swiper = new Swiper('.swiper-container', {
     document.querySelector('.thecard2').onclick = function() {
     document.querySelector('.thecard2').classList.toggle('do-flip') }
 
-    document.querySelector('.thecard3').onclick = function() {
-    document.querySelector('.thecard3').classList.toggle('do-flip') }
+    // document.querySelector('.thecard3').onclick = function() {
+    // document.querySelector('.thecard3').classList.toggle('do-flip') }
   
     // document.getElementById('flip-card').onclick = function() {
     // document.getElementById('flip-card').classList.toggle('do-flip');
