@@ -308,7 +308,7 @@ body {
     background-color: #000!important;
 }
 .swiper-pagination{
-    bottom: 147px;
+    bottom: 136px;
     left: 210px;
 }
 .updated{
@@ -326,25 +326,25 @@ body {
 .block1Img{
     width: 124px;
     position: absolute;
-    bottom: 70px;
+    bottom: 52px;
     left: 0;
 }
 .block2Img{
     width: 110px;
     position: absolute;
-    bottom: 74px;
+    bottom: 56px;
     left: 100px;
 }
 .block3Img{
     width: 139px;
     position: absolute;
-    bottom: 72px;
+    bottom: 54px;
     right: 94px;
 }
 .block4Img{
     width: 104px;
     position: absolute;
-    bottom: 77px;
+    bottom: 59px;
     right: 0px;
 }
 
