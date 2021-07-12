@@ -26,6 +26,10 @@
     height: 100%;
     padding: 16px; 
 }
+.cardToTest3{
+    background-color: #ede3eb;
+}
+
 .swiper-wrapper{
  width: 360px;
 }
@@ -156,6 +160,7 @@ p{
  bottom: 0;
  width: 58px;
  right: 0;
+ z-index: 100;
 }
 
 .hello{
@@ -331,6 +336,14 @@ body {
     animation-name: backAnimation;
     background-color: #adc6e5;
 }
+.animatedBySwiperPodatkiv{
+    background-color: #dac7d7;
+    animation-name: backPodatkivAnimation
+}
+.animatedBySwiperPodatkivBack{
+    background-color: #82b2d4;
+    animation-name: backPodatkivBackAnimation
+}
 .cardPhotos{
     display: flex;
     justify-content: space-between;
@@ -418,4 +431,89 @@ body {
     100% {
       background-color: #adc6e5;
     }
+
   }
+  @keyframes backPodatkivAnimation {
+    0% {
+      background-color: #82b2d4;  
+    }
+    100% {
+      background-color: #dac7d7;
+    } 
+}
+@keyframes backPodatkivBackAnimation {
+    0% {
+      background-color: #dac7d7;  
+    }
+    100% {
+      background-color: #82b2d4;
+    } 
+}
+
+
+.mainMainContainer{
+    width: 420px;
+    height: 900px;
+    padding: 0;
+    margin: 0;
+    margin-top: -8px;
+    margin-left: -7px; 
+}
+.mainMainContainer.activeBlur{
+    -webkit-filter: blur(8px);
+    -moz-filter: blur(8px);
+    filter: blur(8px);
+}
+
+.popup1{
+    position: fixed; 
+    bottom: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 330px;
+    background: #fafafa;
+    transition: 0.4s;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1000;
+    border-radius: 8px;
+}
+.popup1.popedUp{
+    bottom: -12%;
+    transition: 0.4s;
+    visibility: visible;
+    opacity: 1;
+    z-index: 1000;
+
+}
+
+.popup1{
+    display: flex;
+    flex-direction: column;
+}
+
+.additionalInfo{
+    font-family: UkraineRegular;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.infoP{
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+.infoP1{
+    margin-top: 45px;
+}
+.crossInfo{
+    width: 55px;
+    margin-top: 17px;
+}
+.lineOfInfo{
+    width: 90%;
+    height: 2px;
+    background-color: #adc6e5;
+    /* display: block; */
+}

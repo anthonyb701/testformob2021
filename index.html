@@ -117,6 +117,7 @@
 </head>
 
 <body>
+  <div class="mainMainContainer" onclick="closePopup()">
   <div class="cardPhotos" ><img class="imgLogo" src="./img/Logo_01.png" alt="">
   <img  class="qrscanner" src="./img/try1.png" alt=""></div>
   <div class="maincontainer">
@@ -156,7 +157,7 @@
                   <p class="zagolov1 zagolovNiz">Бітнер <br> Антон <br> Васильович</p>
                 </div>
                 <div>
-                  <img  class="dots3" src="img/3dotsButton.png" alt="">
+                  <img  class="dots3" src="img/3dotsButton.png" onclick="smthToDo()" alt="">
                 </div>
               </div>
             </div>
@@ -201,10 +202,10 @@
           </div>
         </div>
         <div class="swiper-slide">
-          <div class="thecard thecard2">
+          <div class="thecard thecard3">
 
             <div class="thefront ">
-              <div class="cardToTest2">
+              <div class="cardToTest2 cardToTest3">
                 <div>
                   <p class="zagolov1">Картка платника <br> податків</p>
                 </div>
@@ -285,7 +286,14 @@
 
     </div> -->
   </div>
+</div>
 
+  <div class="popup1">
+    <div class="additionalInfo"><p class="infoP infoP1">Повна інформація</p> <span class="lineOfInfo"></span></div>
+    <div class="additionalInfo"><p class="infoP">Коди для перевірки</p> <span class="lineOfInfo"></span></div>
+    <div class="additionalInfo"><p class="infoP">Питання та відповіді</p> <span class="lineOfInfo"></span></div>
+    <div class="additionalInfo crossAdditionalInfo" onclick="unBlur()"><img class="crossInfo" src="./img/cross(white).png" alt=""></div>
+  </div>
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
