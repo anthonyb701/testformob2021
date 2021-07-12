@@ -308,13 +308,13 @@ body {
     background-color: #000!important;
 }
 .swiper-pagination{
-    bottom: 90px;
+    bottom: 113px;
     left: 210px;
 }
 .updated{
     font-family: UkraineRegular;
     position: absolute;
-    bottom: 116px;
+    bottom: 139px; 
     left: 105px;
     font-size: 12px;
 }
@@ -324,27 +324,27 @@ body {
 } */
 
 .block1Img{
-    width: 120px;
+    width: 124px;
     position: absolute;
-    bottom: 12px;
+    bottom: 34px;
     left: 0;
 }
 .block2Img{
     width: 110px;
     position: absolute;
-    bottom: 15px;
+    bottom: 38px;
     left: 100px;
 }
 .block3Img{
     width: 139px;
     position: absolute;
-    bottom: 14px;
+    bottom: 36px;
     right: 94px;
 }
 .block4Img{
     width: 104px;
     position: absolute;
-    bottom: 19px;
+    bottom: 41px;
     right: 0px;
 }
 
