@@ -106,13 +106,19 @@ window.setInterval(function () {
 
 let date = new Date()
 let date1 = new Date().toLocaleDateString('uk-UA')
-console.log(date)
+
 
 const day = date.getDate()
 const year = date.getFullYear()
-console.log(day, year)
 const getHours = date.getHours()
-const getMinutes = date.getMinutes()
+let getMinutes = date.getMinutes()
+getMinutes = getMinutes.toString()
+
+
+if(!getMinutes[1]){
+  getMinutes = `0${getMinutes}`
+}
+
 // console.log(date.getHours())
 // console.log(date.getMinutes())
 
