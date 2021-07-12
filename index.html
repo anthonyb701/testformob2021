@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  
+
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="style.css">
@@ -108,7 +108,7 @@
     .thecard2 {
       margin-left: 30px;
     } -->
-<!-- 
+  <!-- 
     /*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
     
 
@@ -118,12 +118,12 @@
 
 <body>
   <div class="mainMainContainer" onclick="closePopup()">
-  <div class="cardPhotos" ><img class="imgLogo" src="./img/Logo_01.png" alt="">
-  <img  class="qrscanner" src="./img/try1.png" alt=""></div>
-  <div class="maincontainer">
-    <div class="swiper-container"> 
-      <div class="swiper-wrapper"> 
-        <!-- <div class="swiper-slide">
+    <div class="cardPhotos"><img class="imgLogo" src="./img/Logo_01.png" alt="">
+      <img class="qrscanner" src="./img/try1.png" alt=""></div>
+    <div class="maincontainer">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <!-- <div class="swiper-slide">
           <div class="thecard thecard1">
 
             <div class="thefront">
@@ -136,108 +136,116 @@
       
           </div>
         </div> -->
-        <div class="swiper-slide">
-          <div class="thecard thecard1">
+          <div class="swiper-slide">
+            <div class="thecard thecard1">
 
-            <div class="thefront ">
-              <div class="cardToTest1">
-                <div>
-                  <p class="zagolov1">Паспорт громадянина України <img class="zagolovImg" src="img/gerblogo.png" alt=""></p>
-                </div>
-                <div class="photoAndDataSection">
-                  <img class="imgFace" src="img/face.png" alt="">
-                  <div class="textNearImg">
-                    <p class="dateOfBirth">Дата<br> народження: <br> 08.05.2003</p>
-                    <p class="numberOfID">Номер:<br> <a class="number">002538826</a></p>
-                    <img class="signatureImg" src="img/signature.png" alt="">
+              <div class="thefront ">
+                <div class="cardToTest1">
+                  <div>
+                    <p class="zagolov1">Паспорт громадянина України <img class="zagolovImg" src="img/gerblogo.png"
+                        alt=""></p>
+                  </div>
+                  <div class="photoAndDataSection">
+                    <img class="imgFace" src="img/face.png" alt="">
+                    <div class="textNearImg">
+                      <p class="dateOfBirth">Дата<br> народження: <br> 08.05.2003</p>
+                      <p class="numberOfID">Номер:<br> <a class="number">002538826</a></p>
+                      <img class="signatureImg" src="img/signature.png" alt="">
+                    </div>
+                  </div>
+                  <span class="line"></span>
+                  <div>
+                    <p class="zagolov1 zagolovNiz">Бітнер <br> Антон <br> Васильович</p>
+                  </div>
+                  <div>
+                    <img class="dots3" src="img/3dotsButton.png" onclick="smthToDo()" alt="">
                   </div>
                 </div>
-                <span class="line"></span>
-                <div>
-                  <p class="zagolov1 zagolovNiz">Бітнер <br> Антон <br> Васильович</p>
-                </div>
-                <div>
-                  <img  class="dots3" src="img/3dotsButton.png" onclick="smthToDo()" alt="">
-                </div>
               </div>
-            </div>
-      
-            <div class="theback">
-              <img  class="img" src="img/back.PNG" alt="">
-            </div>
-      
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="thecard thecard2">
 
-            <div class="thefront ">
-              <div class="cardToTest2">
-                <div>
-                  <p class="zagolov1">Закордонний паспорт</p>
-                </div>
-                <div class="photoAndDataSection">
-                  <img class="imgFace" src="img/faceForeign.PNG" alt="">
-                  <div class="textNearImg">
-                    <p class="dateOfBirth">Дата<br> народження: <br> 08.05.2003</p>
-                    <p class="numberOfID">Номер:<br> FZ175112</p>
-                    <img class="signatureImg signForeignImg" src="img/signForeign.PNG" alt="">
+              <div class="theback">
+                <img class="img" src="img/back.PNG" alt="">
+              </div>
+
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="thecard thecard2">
+
+              <div class="thefront ">
+                <div class="cardToTest2">
+                  <div>
+                    <p class="zagolov1">Закордонний паспорт</p>
+                  </div>
+                  <div class="photoAndDataSection">
+                    <img class="imgFace" src="img/faceForeign.PNG" alt="">
+                    <div class="textNearImg">
+                      <p class="dateOfBirth">Дата<br> народження: <br> 08.05.2003</p>
+                      <p class="numberOfID">Номер:<br> FZ175112</p>
+                      <img class="signatureImg signForeignImg" src="img/signForeign.PNG" alt="">
+                    </div>
+                  </div>
+                  <!-- <marquee behavior="alternate" direction="right">Бегущая строка</marquee> -->
+                  <marquee behavior="scroll" scrollamount="3" scrolldelay="5" width="360" direction="left"
+                    class="lineForeign">Не для виізду за кордон &nbsp; Не для виїзду за кордон &nbsp; Не для виізду за
+                    кордон &nbsp; Не для виїзду за кордон &nbsp; Не для виізду за кордон &nbsp; Не для виїзду за кордон
+                    &nbsp; Не для виізду за кордон &nbsp; Не для виїзду за кордон </marquee>
+                  <div>
+                    <p class="zagolov1 zagolovNiz zagolozNizForeign">Бітнер <br> Антон <br> Васильович</p>
+                  </div>
+                  <div>
+                    <img class="dots3" src="img/3dotsForeign.PNG" alt="">
                   </div>
                 </div>
-                <!-- <marquee behavior="alternate" direction="right">Бегущая строка</marquee> -->
-                <marquee behavior="scroll" scrollamount="3" scrolldelay="5"  width="360" direction="left" class="lineForeign">Не для виізду за кордон &nbsp; Не для виїзду за кордон &nbsp; Не для виізду за кордон &nbsp; Не для виїзду за кордон &nbsp; Не для виізду за кордон &nbsp; Не для виїзду за кордон &nbsp; Не для виізду за кордон &nbsp; Не для виїзду за кордон </marquee>
-                <div>
-                  <p class="zagolov1 zagolovNiz zagolozNizForeign">Бітнер <br> Антон <br> Васильович</p>
-                </div>
-                <div>
-                  <img  class="dots3" src="img/3dotsForeign.PNG" alt="">
-                </div>
               </div>
-            </div>
-      
-            <div class="theback">
-              <img  class="img" src="img/back.PNG" alt="">
-            </div>
-      
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="thecard thecard3">
 
-            <div class="thefront ">
-              <div class="cardToTest2 cardToTest3">
-                <div>
-                  <p class="zagolov1">Картка платника <br> податків</p>
-                </div>
-                <div class="photoAndDataSection">
-                  <!-- <img class="imgFace" src="img/faceForeign.PNG" alt=""> -->
-                  <div class="textNearImg">
-                    <p class="rno">РНОКПП</p>
-                    
-                    <!-- <img class="signatureImg signForeignImg" src="img/signForeign.PNG" alt=""> -->
-                  </div>
-                </div>
-                <!-- <marquee behavior="alternate" direction="right">Бегущая строка</marquee> -->
-                
-                <div>
-                  <p class="zagolov1 zagolovNiz zagolozNizForeign zagolovPodatkiv">Бітнер <br> Антон <br> Васильович</p>
-                  <p class=" dateOfPodatkiv">Дата народження: <br> 08.05.2003</p>
-                </div>
-                <marquee behavior="scroll" scrollamount="3" scrolldelay="5"  width="360" direction="left" class=" linePodatkiv">РНОКПП дійсний &nbsp;&nbsp; Перевірено Державною податковою службою &nbsp;&nbsp; РНОКПП дійсний &nbsp;&nbsp; Перевірено Державною податковою службою &nbsp;&nbsp; РНОКПП дійсний &nbsp; &nbsp;Перевірено Державною податковою службою &nbsp;</marquee>
+              <div class="theback">
+                <img class="img" src="img/back.PNG" alt="">
               </div>
-              <div>
-                <a class="number numberCode">3811401978</a>
-                <img  class="codeOfRno" src="./img/iconofcode(white).png" alt="">
-              </div>
+
             </div>
-      
-            <div class="theback">
-              <img  class="img" src="img/back.PNG" alt="">
-            </div>
-      
           </div>
-        </div>
-        <!-- <div class="swiper-slide">
+          <div class="swiper-slide">
+            <div class="thecard thecard3">
+
+              <div class="thefront ">
+                <div class="cardToTest2 cardToTest3">
+                  <div>
+                    <p class="zagolov1">Картка платника <br> податків</p>
+                  </div>
+                  <div class="photoAndDataSection">
+                    <!-- <img class="imgFace" src="img/faceForeign.PNG" alt=""> -->
+                    <div class="textNearImg">
+                      <p class="rno">РНОКПП</p>
+
+                      <!-- <img class="signatureImg signForeignImg" src="img/signForeign.PNG" alt=""> -->
+                    </div>
+                  </div>
+                  <!-- <marquee behavior="alternate" direction="right">Бегущая строка</marquee> -->
+
+                  <div>
+                    <p class="zagolov1 zagolovNiz zagolozNizForeign zagolovPodatkiv">Бітнер <br> Антон <br> Васильович
+                    </p>
+                    <p class=" dateOfPodatkiv">Дата народження: <br> 08.05.2003</p>
+                  </div>
+                  <marquee behavior="scroll" scrollamount="3" scrolldelay="5" width="360" direction="left"
+                    class=" linePodatkiv">РНОКПП дійсний &nbsp;&nbsp; Перевірено Державною податковою службою
+                    &nbsp;&nbsp; РНОКПП дійсний &nbsp;&nbsp; Перевірено Державною податковою службою &nbsp;&nbsp; РНОКПП
+                    дійсний &nbsp; &nbsp;Перевірено Державною податковою службою &nbsp;</marquee>
+                </div>
+                <div>
+                  <a class="number numberCode">3811401978</a>
+                  <img class="codeOfRno" src="./img/iconofcode(white).png" alt="">
+                </div>
+              </div>
+
+              <div class="theback">
+                <img class="img" src="img/back.PNG" alt="">
+              </div>
+
+            </div>
+          </div>
+          <!-- <div class="swiper-slide">
           <div class="thecard thecard2">
 
             <div class="thefront">
@@ -263,18 +271,18 @@
       
           </div>
         </div> -->
+        </div>
+
       </div>
-      
-    </div>
-    <div class="swiper-pagination"></div>
-    <div class="updated">Дані оновлено <span class="dateUpdated"> </span> о <span class="timeUpdated"> </span></div>
-    <div class="imgBlocks">
-      <img class="block1Img" src="./img/prog1(white).png" alt="">
-      <img class="block2Img" src="./img/prog2(white).png" alt="">
-      <img class="block3Img" src="./img//prog3(white).png" alt="">
-      <img class="block4Img" src="./img//prog4(white).png" alt="">
-    </div>
-    <!-- <div class="thecard">
+      <div class="swiper-pagination"></div>
+      <div class="updated">Дані оновлено <span class="dateUpdated"> </span> о <span class="timeUpdated"> </span></div>
+      <div class="imgBlocks">
+        <img class="block1Img" src="./img/prog1(white).png" alt="">
+        <img class="block2Img" src="./img/prog2(white).png" alt="">
+        <img class="block3Img" src="./img//prog3(white).png" alt="">
+        <img class="block4Img" src="./img//prog4(white).png" alt="">
+      </div>
+      <!-- <div class="thecard">
 
       <div class="thefront">
         <img class="img" src="img/front.PNG" alt="">
@@ -285,14 +293,29 @@
       </div>
 
     </div> -->
+    </div>
   </div>
-</div>
 
   <div class="popup1">
-    <div class="additionalInfo"><p class="infoP infoP1">Повна інформація</p> <span class="lineOfInfo"></span></div>
-    <div class="additionalInfo"><p class="infoP">Коди для перевірки</p> <span class="lineOfInfo"></span></div>
-    <div class="additionalInfo"><p class="infoP">Питання та відповіді</p> <span class="lineOfInfo"></span></div>
-    <div class="additionalInfo crossAdditionalInfo" onclick="unBlur()"><img class="crossInfo" src="./img/cross(white).png" alt=""></div>
+    <div class="additionalInfo" onclick="openAdditionalPopup()">
+      <p class="infoP infoP1">Повна інформація</p> <span class="lineOfInfo"></span>
+    </div>
+    <div class="additionalInfo">
+      <p class="infoP">Коди для перевірки</p> <span class="lineOfInfo"></span>
+    </div>
+    <div class="additionalInfo">
+      <p class="infoP">Питання та відповіді</p> <span class="lineOfInfo"></span>
+    </div>
+    <div class="additionalInfo crossAdditionalInfo" onclick="unBlur()"><img class="crossInfo"
+        src="./img/cross(white).png" alt=""></div>
+  </div>
+
+  <div class="infoPopup">
+    <div class="infoPopupAdditional">
+      <img class="imgData dataTop" src="./img/dataTop.png" alt="">
+      <img class="imgData dataBottom" src="./img/dataBottomNew.png" alt="">
+      <span class="closePopup" onclick="closeAdditionalPopup()"></span>
+    </div>
   </div>
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

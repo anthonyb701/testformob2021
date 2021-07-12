@@ -49,9 +49,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
   document.querySelector('.thecard1').onclick = function () { 
     if(!imgToToggle.classList.contains('clickedBtn')){
       document.querySelector('.thecard1').classList.toggle('do-flip')
-    } else {
-      console.log('hey1')
-    }
+    } 
     // document.querySelector('.thecard1').classList.toggle('do-flip')
   }
 
@@ -77,7 +75,7 @@ const body = document.querySelector('body')
 el1 = el[0]
 el2 = el[1]
 el3 = el[2]
-console.log(el1, el2, el3)
+
 // el3 = el[2] 
 // el4 = el[3]
 //  console.log(el1, el2, el3, el4)
@@ -152,9 +150,6 @@ document.querySelector('.timeUpdated').innerText = `${getHours}:${getMinutes}`
 
 const container = document.querySelector('.mainMainContainer')
 
-console.log(imgToToggle)
-
-console.log(container)
 const popup = document.querySelector('.popup1')
 // imgToToggle.onclick(console.log('hey'))
 // imgToToggle.addEventListener('click', console.log('hey'))
@@ -165,13 +160,11 @@ function blur(){
 }
 
 function smthToDo () {
-  console.log('hey from img')
   imgToToggle.classList.add('clickedBtn')
   blur()
 }
 
 function unBlur() {
-  console.log('heyFromCross')
   imgToToggle.classList.remove('clickedBtn')
   popup.classList.remove('popedUp')
   container.classList.toggle('activeBlur') 
@@ -192,6 +185,28 @@ function closePopup(){
     
   }
 }
+
+const additionalPopup = document.querySelector('.infoPopup')
+
+function openAdditionalPopup() {
+  additionalPopup.classList.add('activeInfoPopup')
+  setTimeout(() => {
+    unBlur()
+    
+  }, 500)
+  setTimeout(() => {
+    body.style.backgroundColor = '#0f2a31ad'
+  }, 200)
+  
+  
+}
+
+function closeAdditionalPopup() {
+  body.style.backgroundColor = '#adc6e5'
+  additionalPopup.classList.remove('activeInfoPopup')
+
+}
+
 // window.onload = function() {
 //   imgToToggle.onclick(console.log('hey'))
 // }
