@@ -60,6 +60,46 @@ p{
     padding-bottom: 10px;
 }
 
+.rno{
+    font-family: UkraineRegular;
+    font-size: 13px;
+    line-height: 1.4;
+    margin-top: -15px;
+}
+.zagolovPodatkiv{
+    margin-top: 15px!important;
+    font-size: 20px!important;
+    line-height: 1!important;
+}
+.dateOfPodatkiv{
+    font-family: UkraineRegular;
+    font-size: 13px;
+    line-height: 1.4;
+    margin-top: 20px;
+}
+.linePodatkiv{
+    font-family: UkraineMedium;
+    font-size: 12px;
+    background: linear-gradient(to left, #9ccecf, #b6eb9f) ;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    position: absolute;
+    top: 379px;
+    left: 0;
+}
+.numberCode{
+    position: absolute;
+    bottom: 32px;
+    left: 13px;
+    font-family: UkraineRegular;
+    font-size: 26px;
+}
+.codeOfRno{
+    position: absolute;
+    bottom: 35px;
+    left: 165px;
+    width: 28px;
+}
 .dateOfBirth{
     margin-left: 18px;
     margin-top: 2px;
@@ -309,6 +349,7 @@ body {
 }
 .swiper-pagination-bullet{
     background-color: #7e8a9f!important;
+    margin-left: 4px;
 }
 .swiper-pagination-bullet-active{
     background-color: #000!important;
