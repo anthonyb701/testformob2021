@@ -204,6 +204,9 @@ function openAdditionalPopup() {
 function closeAdditionalPopup() {
   body.style.backgroundColor = '#adc6e5'
   additionalPopup.classList.remove('activeInfoPopup')
+  setTimeout(() => {
+    body.style.backgroundColor = ''
+  }, 300)
 
 }
 
