@@ -370,8 +370,9 @@ body {
     background-color: #000!important;
 }
 .swiper-pagination{
-    bottom: 126px;
-    left: 210px;
+    bottom: 126px!important;
+    left: 210px!important;
+    width: auto!important;
 }
 .updated{
     font-family: UkraineRegular;
