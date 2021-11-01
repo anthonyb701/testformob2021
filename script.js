@@ -61,6 +61,10 @@ document.addEventListener('DOMContentLoaded', function (event) {
     document.querySelector('.thecard3').classList.toggle('do-flip')
   }
 
+  document.querySelector('.thecard4').onclick = function () {
+    document.querySelector('.thecard4').classList.toggle('do-flip')
+  }
+
   // document.querySelector('.thecard3').onclick = function() {
   // document.querySelector('.thecard3').classList.toggle('do-flip') }
 
@@ -75,56 +79,89 @@ const body = document.querySelector('body')
 el1 = el[0]
 el2 = el[1]
 el3 = el[2]
+el4= el[3]
 
-// el3 = el[2] 
-// el4 = el[3]
-//  console.log(el1, el2, el3, el4)
-// setTimeout(() => {
-//   document.querySelector('body').classList.add('animatedBySwiper')
-// }, 3000)
-// setTimeout(() => {
-//   document.querySelector('body').classList.remove('animatedBySwiper')
-//   document.querySelector('body').classList.add('animatedBySwiperBack')
-// }, 6000)
+
+// window.setInterval(function () {
+
+//       if (el1.classList.contains('swiper-slide-active') && !el2.classList.contains('swiper-slide-active') ) {
+//         if (!body.classList.contains('animatedBySwiperBack')) {
+//           body.classList.remove('animatedBySwiper')
+//           body.classList.remove('animatedBySwiperPodatkivBack')
+//           body.classList.add('animatedBySwiperBack')
+//         }
+//       } else if (!el1.classList.contains('swiper-slide-active') && el2.classList.contains('swiper-slide-active')) {
+//         body.classList.remove('animatedBySwiperBack')
+//         body.classList.remove('animatedBySwiperPodatkivBack')
+//         body.classList.add('animatedBySwiper')
+//         } else if(el3.classList.contains('swiper-slide-active')) {
+//           body.classList.remove('animatedBySwiperBack')
+//           body.classList.remove('animatedBySwiper')
+//           body.classList.remove('animatedBySwiperPodatkivBack')
+//           body.classList.add('animatedBySwiperPodatkiv')
+//         } 
+//         if(!el1.classList.contains('swiper-slide-active') && el2.classList.contains('swiper-slide-active') && body.classList.contains('animatedBySwiperPodatkiv')) {
+//           body.classList.remove('animatedBySwiperBack')
+//           body.classList.remove('animatedBySwiper')
+//           body.classList.remove('animatedBySwiperPodatkiv')
+//           body.classList.add('animatedBySwiperPodatkivBack')
+//         }
+//       } 
+
+//       , 100);
 
 window.setInterval(function () {
-      // if(el1.classList.contains('swiper-slide-active') && body.classList.contains('animatedBySwiperBack')) {
-      //   if(el2.classList.contains('swiper-slide-active' && !body.classList.contains('animatedBySwiper') )) {
-
-      //     console.log('heey from swipe to')
-      //     body.classList.remove('animatedBySwiperBack')
-      //     body.classList.add('animatedBySwiper')
-      //   } 
-      // } else if(el1.classList.contains('swiper-slide-active')){
-      //   body.classList.remove('animatedBySwiper')
-      //   body.classList.add('animatedBySwiperBack')
-      // }
 
       if (el1.classList.contains('swiper-slide-active') && !el2.classList.contains('swiper-slide-active') ) {
         if (!body.classList.contains('animatedBySwiperBack')) {
           body.classList.remove('animatedBySwiper')
           body.classList.remove('animatedBySwiperPodatkivBack')
+          body.classList.remove('animatedBySwiperCovid')
+          body.classList.remove('animatedBySwiperCovidBack')
+          body.classList.remove('checkStatusForEl3')
           body.classList.add('animatedBySwiperBack')
+          console.log('from el1')
         }
       } else if (!el1.classList.contains('swiper-slide-active') && el2.classList.contains('swiper-slide-active')) {
-        body.classList.remove('animatedBySwiperBack')
-        body.classList.remove('animatedBySwiperPodatkivBack')
-        body.classList.add('animatedBySwiper')
-        } else if(el3.classList.contains('swiper-slide-active')) {
           body.classList.remove('animatedBySwiperBack')
-          body.classList.remove('animatedBySwiper')
           body.classList.remove('animatedBySwiperPodatkivBack')
-          body.classList.add('animatedBySwiperPodatkiv')
-        } 
-        if(!el1.classList.contains('swiper-slide-active') && el2.classList.contains('swiper-slide-active') && body.classList.contains('animatedBySwiperPodatkiv')) {
-          body.classList.remove('animatedBySwiperBack')
-          body.classList.remove('animatedBySwiper')
+          body.classList.remove('animatedBySwiperCovidBack')
+          body.classList.remove('animatedBySwiperCovid')
           body.classList.remove('animatedBySwiperPodatkiv')
-          body.classList.add('animatedBySwiperPodatkivBack')
-        }
-      } 
+          body.classList.remove('checkStatusForEl3')
+          body.classList.add('animatedBySwiper')
+          console.log('from el2')
+          } else if(el3.classList.contains('swiper-slide-active') && !el4.classList.contains('swiper-slide-active') && !body.classList.contains('checkStatusForEl3')) {
+            body.classList.remove('animatedBySwiperBack')
+            body.classList.remove('animatedBySwiper')
+            body.classList.remove('animatedBySwiperPodatkivBack')
+            body.classList.remove('animatedBySwiperCovid')
+            body.classList.remove('animatedBySwiperCovidBack')
+            body.classList.add('animatedBySwiperPodatkiv')
+            console.log('from el3')
+          } else if(el4.classList.contains('swiper-slide-active')) {
+            body.classList.remove('animatedBySwiperBack')
+            body.classList.remove('animatedBySwiper')
+            body.classList.remove('animatedBySwiperPodatkiv')
+            body.classList.remove('animatedBySwiperPodatkivBack')
+            body.classList.remove('animatedBySwiperCovidBack')
+            body.classList.add('animatedBySwiperCovid')
+            body.classList.add('checkStatusForEl3')
+            console.log('from el4')
+          }
+          if(!el1.classList.contains('swiper-slide-active') && !el2.classList.contains('swiper-slide-active') && el3.classList.contains('swiper-slide-active') && body.classList.contains('animatedBySwiperCovid')) {
+            body.classList.remove('animatedBySwiperBack')
+            body.classList.remove('animatedBySwiper')
+            body.classList.remove('animatedBySwiperPodatkiv')
+            body.classList.remove('animatedBySwiperPodatkivBack')
+            body.classList.remove('animatedBySwiperCovid')
+            body.classList.add('animatedBySwiperCovidBack')
+            console.log('from el default(3)')
+          }
+        } 
+  
+        , 100);
 
-      , 100);
 
 let date = new Date()
 let date1 = new Date().toLocaleDateString('uk-UA')

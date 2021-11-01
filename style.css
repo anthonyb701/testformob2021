@@ -30,6 +30,9 @@
     background-color: #ede3eb;
 }
 
+.cardToTest4{
+    background-color: #e8f5e4;
+}
 .swiper-wrapper{
  width: 360px;
 }
@@ -137,6 +140,10 @@ p{
     display: block;
     background-color: #adc6e5;
     margin-top: 11px;
+}
+
+.lineCovid{
+    background-color: #c1e6ba; 
 }
 
 .lineForeign{
@@ -299,6 +306,12 @@ body {
     width: 100%;
     
   }
+
+  .imgCovid{
+    object-fit: fill;
+    height: 100%;
+  }
+
   .thecard1 {
     /* margin-left: 31px; */
   }
@@ -346,6 +359,15 @@ body {
     background-color: #82b2d4;
     animation-name: backPodatkivBackAnimation
 }
+
+.animatedBySwiperCovid{
+    background-color: #bfeab4;
+    animation-name: toCovidAnimation
+}
+.animatedBySwiperCovidBack{
+    background-color: #dac7d7;
+    animation-name: backCovidAnimation
+}
 .cardPhotos{
     display: flex;
     justify-content: space-between;
@@ -355,6 +377,11 @@ body {
     margin-left: 15px;
     margin-top: 30px;
     width: 55px; 
+}
+.imgCovidFace{
+    border: 2.5px solid #bfeab4;
+    padding-bottom: 0;
+    margin-bottom: 10px;
 }
 .qrscanner{
     width: 40px;
@@ -371,7 +398,7 @@ body {
 }
 .swiper-pagination{
     bottom: 126px!important;
-    left: 210px!important;
+    left: 185px!important;
     width: auto!important;
 }
 .updated{
@@ -453,7 +480,23 @@ body {
     } 
 }
 
+@keyframes toCovidAnimation {
+    0% {
+      background-color: #dac7d7;  
+    }
+    100% {
+      background-color: #bfeab4;
+    } 
+}
 
+@keyframes backCovidAnimation {
+    0% {
+      background-color: #bfeab4;  
+    }
+    100% {
+      background-color: #dac7d7;
+    } 
+}
 .mainMainContainer{
     width: 420px;
     height: 900px;
