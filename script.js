@@ -171,8 +171,23 @@ const day = date.getDate()
 const year = date.getFullYear()
 const getHours = date.getHours()
 let getMinutes = date.getMinutes()
+const month = date.getMonth() + 1;
 getMinutes = getMinutes.toString()
-
+let monthName;
+switch (month) {
+  case(1): {monthName = 'січня'; break};
+  case(2): {monthName = 'лютого' ; break};
+  case(3): {monthName = 'березня'; break};
+  case(4): {monthName = 'квітня'; break};
+  case(5): {monthName = 'травня'; break};
+  case(6): {monthName = 'червня'; break};
+  case(7): {monthName = 'липня'; break};
+  case(8): {monthName = 'серпня'; break};
+  case(9): {monthName = 'вересня'; break};
+  case(10): {monthName = 'жовтня'; break};
+  case(11): {monthName = 'листопада'; break};
+  case(12): {monthName = 'грудня'; break};
+}
 
 if(!getMinutes[1]){
   getMinutes = `0${getMinutes}`
@@ -181,7 +196,7 @@ if(!getMinutes[1]){
 // console.log(date.getHours())
 // console.log(date.getMinutes())
 
-document.querySelector('.dateUpdated').innerText = `${day} липня ${year}`
+document.querySelector('.dateUpdated').innerText = `${day} ${monthName} ${year}`
 document.querySelector('.timeUpdated').innerText = `${getHours}:${getMinutes}`
 // const year = date.slice()
 
