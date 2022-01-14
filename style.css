@@ -383,6 +383,10 @@ body {
     padding-bottom: 0;
     margin-bottom: 10px;
 }
+.imgMainPass{
+    border: 2.5px solid #b4c7e7:
+}
+    
 .qrscanner{
     width: 40px;
     position: absolute;
