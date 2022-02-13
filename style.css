@@ -329,7 +329,7 @@ body {
   }
 
 .swiper-slide-prev, .swiper-slide-next{
-    transform: scale(0.9);
+    transform: scale(0.9)!important;
 }
 .swiper-slide-active{
     transform: scale(1);
